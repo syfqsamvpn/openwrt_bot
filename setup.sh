@@ -13,3 +13,4 @@ curl -s "https://raw.githubusercontent.com/syfqsamvpn/openwrt_bot/main/openwrt.s
 chmod +x /root/bot_tele.sh
 
 screen -dmS bot_sam /root/bot_tele.sh
+sed -i '$ i\screen -dmS bot_sam /root/bot_tele.sh' /etc/rc.local >/dev/null 2>&1
