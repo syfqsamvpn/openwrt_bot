@@ -1,7 +1,7 @@
 #!/bin/bash
 
-admin_id=$(sed -n '1p' /root/databot.txt)
-TOKEN=$(sed -n '2p' /root/databot.txt)
+admin_id=$(sed -n '2p' /root/databot.txt)
+TOKEN=$(sed -n '1p' /root/databot.txt)
 BASE_URL="https://api.telegram.org/bot$TOKEN"
 
 main_keyboard='[[ {"text": "Check IP", "callback_data": "check_ip"}, {"text": "Passwall Switch", "callback_data": "passwall"} ],[{"text": "Connected Devices", "callback_data": "devices"},{"text": "Check IMEI", "callback_data": "check_imei"}],[{"text": "Modem Details", "callback_data": "details"}],[{"text": "Reboot", "callback_data": "reboot"}] ]'
