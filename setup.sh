@@ -6,6 +6,7 @@ read -p "Admin Id  : " admin_id
 echo "$token" >/root/databot.txt
 echo "$admin_id" >>/root/databot.txt
 
+opkg update
 opkg install jq --force-depends
 opkg install screen --force-depends
 
